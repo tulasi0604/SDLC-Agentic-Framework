@@ -1,0 +1,9 @@
+.git
+dist
+node_modules
+submission.zip
+coverage
+test
+data
+postman
+*.md
