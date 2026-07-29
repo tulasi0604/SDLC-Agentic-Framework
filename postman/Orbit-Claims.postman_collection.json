@@ -1,0 +1,10 @@
+{
+  "info": {"name":"Orbit Claims API","description":"Approval, duplicate, eligibility, and validation examples.","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "variable": [{"key":"baseUrl","value":"http://localhost:5173"}],
+  "item": [
+    {"name":"Approved claim","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"claimId\":\"CLM-PM-100\",\"memberId\":\"M-1001\",\"serviceDate\":\"2026-07-20\",\"amount\":125.50,\"procedureCode\":\"A100\"}"},"url":"{{baseUrl}}/api/v1/claims"},"event":[{"listen":"test","script":{"exec":["pm.test('approved', () => { pm.response.to.have.status(200); pm.expect(pm.response.json().status).to.eql('APPROVED'); });"]}}]},
+    {"name":"Duplicate claim","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"claimId\":\"CLM-0001\",\"memberId\":\"M-1001\",\"serviceDate\":\"2026-07-20\",\"amount\":25,\"procedureCode\":\"A100\"}"},"url":"{{baseUrl}}/api/v1/claims"},"event":[{"listen":"test","script":{"exec":["pm.test('duplicate', () => pm.expect(pm.response.json().status).to.eql('DUPLICATE'));"]}}]},
+    {"name":"Ineligible member","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"claimId\":\"CLM-PM-102\",\"memberId\":\"M-9001\",\"serviceDate\":\"2026-07-20\",\"amount\":25,\"procedureCode\":\"A100\"}"},"url":"{{baseUrl}}/api/v1/claims"},"event":[{"listen":"test","script":{"exec":["pm.test('ineligible', () => pm.expect(pm.response.json().status).to.eql('INELIGIBLE'));"]}}]},
+    {"name":"Validation failure","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"claimId\":\"\",\"amount\":0}"},"url":"{{baseUrl}}/api/v1/claims"},"event":[{"listen":"test","script":{"exec":["pm.test('bad request', () => pm.response.to.have.status(400));","pm.test('validation details', () => pm.expect(pm.response.json().error).to.eql('VALIDATION_ERROR'));"]}}]}
+  ]
+}

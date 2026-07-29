@@ -1,0 +1,8 @@
+services:
+  orbit:
+    build: .
+    ports:
+      - "5173:5173"
+    environment:
+      PORT: 5173
+    restart: unless-stopped

@@ -1,0 +1,22 @@
+[
+  {"claimId":"CLM-0001","memberId":"M-1001","serviceDate":"2026-07-01","amount":75.00,"procedureCode":"A100","expectedStatus":"DUPLICATE"},
+  {"claimId":"CLM-0002","memberId":"M-1001","serviceDate":"2026-07-02","amount":125.50,"procedureCode":"A100","expectedStatus":"APPROVED"},
+  {"claimId":"CLM-0003","memberId":"M-1002","serviceDate":"2026-07-03","amount":40.25,"procedureCode":"B205","expectedStatus":"APPROVED"},
+  {"claimId":"CLM-0004","memberId":"M-9001","serviceDate":"2026-07-04","amount":99.99,"procedureCode":"C310","expectedStatus":"INELIGIBLE"},
+  {"claimId":"CLM-0005","memberId":"M-1003","serviceDate":"2026-07-05","amount":250.00,"procedureCode":"D400","expectedStatus":"APPROVED"},
+  {"claimId":"CLM-0006","memberId":"M-9002","serviceDate":"2026-07-06","amount":10.00,"procedureCode":"A100","expectedStatus":"INELIGIBLE"},
+  {"claimId":"CLM-0007","memberId":"M-1004","serviceDate":"2026-07-07","amount":81.75,"procedureCode":"E505","expectedStatus":"APPROVED"},
+  {"claimId":"CLM-0008","memberId":"M-1005","serviceDate":"2026-07-08","amount":33.33,"procedureCode":"B205","expectedStatus":"APPROVED"},
+  {"claimId":"CLM-0009","memberId":"M-9003","serviceDate":"2026-07-09","amount":180.00,"procedureCode":"F600","expectedStatus":"INELIGIBLE"},
+  {"claimId":"CLM-0010","memberId":"M-1001","serviceDate":"2026-07-10","amount":0.01,"procedureCode":"A100","expectedStatus":"APPROVED"},
+  {"claimId":"CLM-0011","memberId":"M-1002","serviceDate":"2026-07-11","amount":501.20,"procedureCode":"G710","expectedStatus":"APPROVED"},
+  {"claimId":"CLM-0012","memberId":"M-9004","serviceDate":"2026-07-12","amount":64.00,"procedureCode":"C310","expectedStatus":"INELIGIBLE"},
+  {"claimId":"CLM-0013","memberId":"M-1003","serviceDate":"2026-07-13","amount":145.80,"procedureCode":"D400","expectedStatus":"APPROVED"},
+  {"claimId":"CLM-0014","memberId":"M-1004","serviceDate":"2026-07-14","amount":72.10,"procedureCode":"E505","expectedStatus":"APPROVED"},
+  {"claimId":"CLM-0015","memberId":"M-1005","serviceDate":"2026-07-15","amount":200.00,"procedureCode":"F600","expectedStatus":"APPROVED"},
+  {"claimId":"CLM-0016","memberId":"M-9005","serviceDate":"2026-07-16","amount":19.95,"procedureCode":"A100","expectedStatus":"INELIGIBLE"},
+  {"claimId":"CLM-0017","memberId":"M-1001","serviceDate":"2026-07-17","amount":88.88,"procedureCode":"B205","expectedStatus":"APPROVED"},
+  {"claimId":"CLM-0018","memberId":"M-1002","serviceDate":"2026-07-18","amount":310.40,"procedureCode":"C310","expectedStatus":"APPROVED"},
+  {"claimId":"CLM-0019","memberId":"M-1003","serviceDate":"2026-07-19","amount":54.60,"procedureCode":"D400","expectedStatus":"APPROVED"},
+  {"claimId":"CLM-0020","memberId":"M-1004","serviceDate":"2026-07-20","amount":999.99,"procedureCode":"G710","expectedStatus":"APPROVED"}
+]
