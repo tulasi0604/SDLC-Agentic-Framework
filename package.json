@@ -2,13 +2,8 @@
   "name": "sdlc-agentic-framework",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "node --watch src/server.js",
-    "build": "node scripts/build.mjs",
-    "test": "node --test",
-    "test:coverage": "node --test --experimental-test-coverage",
-    "submission": "bash scripts/package-submission.sh"
+    "start": "python3 -m http.server 5173",
+    "build": "node scripts/build.mjs"
   }
 }

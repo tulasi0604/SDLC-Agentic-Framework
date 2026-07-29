@@ -1,6 +1,3 @@
 dist/
 node_modules/
-.env
-submission.zip
-coverage/
 npm-debug.log*
